@@ -1,0 +1,22 @@
+{
+  "name": "proj1",
+  "version": "1.0.0",
+  "description": "1proj",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/souperjudge/proj1.git"
+  },
+  "author": "pmg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/souperjudge/proj1/issues"
+  },
+  "homepage": "https://github.com/souperjudge/proj1#readme",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  }
+}

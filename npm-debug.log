@@ -1,0 +1,51 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.5.0/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.5.0/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   'proj1' ]
+2 info using npm@3.10.8
+3 info using node@v4.5.0
+4 silly mapToRegistry name proj1
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry http://localhost:15443/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'proj1',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'proj1',
+7 silly mapToRegistry   name: 'proj1',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri http://localhost:15443/proj1
+9 verbose request uri http://localhost:15443/proj1
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 4:55:03 AM
+12 verbose request id 9c6201b7c0aaf9e8
+13 http request GET http://localhost:15443/proj1
+14 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:15443
+15 info attempt registry request try #2 at 4:55:13 AM
+16 http request GET http://localhost:15443/proj1
+17 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:15443
+18 info attempt registry request try #3 at 4:56:13 AM
+19 http request GET http://localhost:15443/proj1
+20 silly get cb [ 304, undefined ]
+21 verbose stack Error: failed to fetch from registry: http://localhost:15443/proj1
+21 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/lib/cache/caching-client.js:164:27
+21 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+21 verbose stack     at f (/home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/once/once.js:25:25)
+21 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+21 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:103:12
+21 verbose stack     at f (/home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/once/once.js:25:25)
+21 verbose stack     at CachingRegistryClient.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:224:20)
+21 verbose stack     at Request._callback (/home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:201:20)
+21 verbose stack     at self.callback (/home/ubuntu/.nvm/versions/node/v4.5.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+21 verbose stack     at emitOne (events.js:82:20)
+22 verbose cwd /home/ubuntu/workspace/npm-learning
+23 error Linux 4.2.0-c9
+24 error argv "/home/ubuntu/.nvm/versions/node/v4.5.0/bin/node" "/home/ubuntu/.nvm/versions/node/v4.5.0/bin/npm" "view" "proj1"
+25 error node v4.5.0
+26 error npm  v3.10.8
+27 error failed to fetch from registry: http://localhost:15443/proj1
+28 error If you need help, you may report this error at:
+28 error     <https://github.com/npm/npm/issues>
+29 verbose exit [ 1, true ]
